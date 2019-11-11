@@ -81,31 +81,43 @@ h1 {
 
 #iconOne {
   color: rgb(73, 73, 73);
-  font-weight: bold;
-  animation: 2s iconOne infinite; 
+  font-weight: bold; 
 }
 
-/* #iconOne .loadingDotOne {
-  transition: color linear 1s, font-weight linear 1s;
+#iconOne .loading {
+  animation: iconOneLoading 2.5s ease-in-out infinite;
 }
 
-#iconOne .loadingDotOne:hover {
-  color: black;
-  font-weight: bold;
-} */
+#iconOne .loadingDotOne {
+  animation: iconOneDots 2s ease-in 0.2s infinite;
+}
 
-@keyframes  iconOne{
-  0% {
-    /* WANTED FONT COLOR */
-    color: rgb(73, 73, 73);
-  }
-  50% {
+#iconOne .loadingDotTwo {
+  animation: iconOneDots 2s ease-in 0.8s infinite;
+}
+
+#iconOne .loadingDotThree {
+  animation: iconOneDots 2s ease-in 1.3s infinite; 
+}
+
+@keyframes  iconOneDots {
+  30% {
     /* BACKGROUND COLOR */
     color: rgb(225, 255, 255);
   }
-  100% {
+  50% {
     /* WANTED FONT COLOR*/
-    color: rgb(73, 73, 73);
+    color: rgb(127, 146, 146);
   }
 }
 
+@keyframes iconOneLoading {
+  10% {
+    /* LIGHTER VERSION OF YOUR FONT COLOR */
+    color: rgb(136, 136, 136);
+  }
+  60% {
+    /* YOUR FONT COLOR */
+    color: rgb(73, 73, 73);
+  }
+}
