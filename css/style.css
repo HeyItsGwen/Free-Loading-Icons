@@ -137,6 +137,29 @@ h1 {
   }
 }
 
+.showButton {
+  margin-top: 10px;
+  border: 1px solid rgb(73, 73, 73);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showButton p {
+  margin: 0;
+}
+
+.hideShow {
+  visibility: hidden;
+  position: absolute;
+}
+
+.showButton:hover code {
+  visibility: visible;
+  position: static;
+}
+
 /* ICON TWO */
 
 #iconTwo p {

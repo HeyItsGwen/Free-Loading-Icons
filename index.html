@@ -42,11 +42,74 @@
       <div class='col-8 divIcon h2Right'>
         <h2>Bouncing Bars</h2>
         <div id='visualOne'>
-          <div class='visualOne' id='divVisualOne'></div>
-          <div class='visualOne' id='divVisualOne'></div>
-          <div class='visualOne' id='divVisualOne'></div>
-          <div class='visualOne' id='divVisualOne'></div>
-          <div class='visualOne' id='divVisualOne'></div>
+          <div class='visualOne'></div>
+          <div class='visualOne'></div>
+          <div class='visualOne'></div>
+          <div class='visualOne'></div>
+          <div class='visualOne'></div>
+        </div>
+        <div class='showButton'>
+          <p>Get The Code</p>
+          <code class='hideShow'>
+            <pre>
+                HTML
+
+                &lt;div id='visualOne'&gt;
+                  &lt;div class='visualOne'&gt;&lt;/div&gt;
+                  &lt;div class='visualOne'&gt;&lt;/div&gt;
+                  &lt;div class='visualOne'&gt;&lt;/div&gt;
+                  &lt;div class='visualOne'&gt;&lt;/div&gt;
+                  &lt;div class='visualOne'&gt;&lt;/div&gt;
+                &lt;/div&gt;
+
+                CSS
+
+                #visualOne {
+                  display: flex;
+                  flex-direction: row;
+                  height: 30px;
+                  align-items: center;
+                }
+                
+                .visualOne {
+                  height: 30px;
+                  width: 6px;
+                  /* YOUR PREFERED BORDER COLOR */
+                  border: 1px solid rgb(73, 73, 73);
+                  margin: 0 1px;
+                  /* BACKGROUND COLOR FOR THE BARS */
+                  background-color: white;
+                }
+                
+                .visualOne:first-child {
+                  animation: bouncingBars 3s ease-in-out infinite;
+                }
+                
+                .visualOne:nth-child(2) {
+                  animation: bouncingBars 3s ease-in-out 0.3s infinite;
+                }
+                
+                .visualOne:nth-child(3) {
+                  animation: bouncingBars 3s ease-in-out 0.6s infinite;
+                }
+                
+                .visualOne:nth-child(4) {
+                  animation: bouncingBars 3s ease-in-out 0.9s infinite;
+                }
+                
+                .visualOne:last-child {
+                  animation: bouncingBars 3s ease-in-out 1.2s infinite;
+                }
+                
+                @keyframes bouncingBars {
+                  25% {
+                    height: 15px;
+                  } 50% {
+                    height: 30px;
+                  }
+                }
+            </pre>
+          </code>
         </div>
       </div>
 
@@ -57,11 +120,12 @@
       <div class='col-8 divIcon'>
         <h2>Stretching Bars</h2>
         <div id='visualTwo'>
-          <div class='visualTwo' id='divVisualTwo'></div>
-          <div class='visualTwo' id='divVisualTwo'></div>
-          <div class='visualTwo' id='divVisualTwo'></div>
-          <div class='visualTwo' id='divVisualTwo'></div>
-          <div class='visualTwo' id='divVisualTwo'></div>
+          <div class='visualTwo'></div>
+          <div class='visualTwo'></div>
+          <div class='visualTwo'></div>
+          <div class='visualTwo'></div>
+          <div class='visualTwo'></div>
+        </div>
         </div>
       </div>
 
@@ -74,11 +138,12 @@
       <div class='col-8 divIcon h2Right'>
         <h2>Bounce & Stretch</h2>
         <div id='visualThree'>
-          <div class='visualThree' id='divVisualThree'></div>
-          <div class='visualThree' id='divVisualThree'></div>
-          <div class='visualThree' id='divVisualThree'></div>
-          <div class='visualThree' id='divVisualThree'></div>
-          <div class='visualThree' id='divVisualThree'></div>
+          <div class='visualThree'></div>
+          <div class='visualThree'></div>
+          <div class='visualThree'></div>
+          <div class='visualThree'></div>
+          <div class='visualThree'></div>
+        </div>
         </div>
       </div>
 
@@ -89,12 +154,13 @@
       <div class='col-8 divIcon'>
         <h2>Spinning Lines</h2>
         <div id='visualFour'>
-          <div class='visualFour' id='divVisualFour'></div>
-          <div class='visualFour' id='divVisualFour'></div>
-          <div class='visualFour' id='divVisualFour'></div>
-          <div class='visualFour' id='divVisualFour'></div>
-          <div class='visualFour' id='divVisualFour'></div>
-          <div class='visualFour' id='divVisualFour'></div>
+          <div class='visualFour'></div>
+          <div class='visualFour'></div>
+          <div class='visualFour'></div>
+          <div class='visualFour'></div>
+          <div class='visualFour'></div>
+          <div class='visualFour'></div>
+        </div>
         </div>
       </div>
 
@@ -108,35 +174,36 @@
         <h2>Twirly Dots</h2>
         <div>
           <div id='visualFive'>
-            <div class='visualFive' id='divvisualFive'></div>
-            <div class='visualFive' id='divvisualFive'></div>
-            <div class='visualFive' id='divvisualFive'></div>
-            <div class='visualFive' id='divvisualFive'></div>
-            <div class='visualFive' id='divvisualFive'></div>
-            <div class='visualFive' id='divvisualFive'></div>
-            <div class='visualFive' id='divvisualFive'></div>
-            <div class='visualFive' id='divvisualFive'></div>
+            <div class='visualFive'></div>
+            <div class='visualFive'></div>
+            <div class='visualFive'></div>
+            <div class='visualFive'></div>
+            <div class='visualFive'></div>
+            <div class='visualFive'></div>
+            <div class='visualFive'></div>
+            <div class='visualFive'></div>
           </div>
         </div>
+      </div>
       </div>
 
     </section>
 
     <section class='row iconSection'>
 
-        <div class='col-8 divIcon'>
-          <h2>Spinning Dots</h2>
-          <div id='visualSix'>
-            <div class='visualSix' id='divVisualSix'></div>
-            <div class='visualSix' id='divVisualSix'></div>
-            <div class='visualSix' id='divVisualSix'></div>
-            <div class='visualSix' id='divVisualSix'></div>
-            <div class='visualSix' id='divVisualSix'></div>
-            <div class='visualSix' id='divVisualSix'></div>
-          </div>
+      <div class='col-8 divIcon'>
+        <h2>Spinning Dots</h2>
+        <div id='visualSix'>
+          <div class='visualSix'></div>
+          <div class='visualSix'></div>
+          <div class='visualSix'></div>
+          <div class='visualSix'></div>
+          <div class='visualSix'></div>
+          <div class='visualSix'></div>
         </div>
-  
-      </section>
+      </div>
+
+    </section>
 
     <div class='col-12 titleBit' id='textBased'>
       <h1>Text Based</h1>
