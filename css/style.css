@@ -278,8 +278,10 @@ h1 {
 .visualOne {
   height: 30px;
   width: 6px;
+  /* YOUR PREFERED BORDER COLOR */
   border: 1px solid rgb(73, 73, 73);
   margin: 0 1px;
+  /* BACKGROUND COLOR FOR THE BARS */
   background-color: white;
 }
 
@@ -313,3 +315,47 @@ h1 {
 
 /* VISUAL TWO */
 
+#visualTwo {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.visualTwo {
+  height: 30px;
+  width: 5px;
+  /* YOUR PREFERED BORDER COLOR */
+  border: 1px solid rgb(73, 73, 73);
+  /* BACKGROUND COLOR FOR THE BARS */
+  background-color: white;
+  margin: 0 1px;
+}
+
+.visualTwo:first-child {
+  animation: stretchingBars 3s ease-in-out infinite;
+}
+
+.visualTwo:nth-child(2) {
+  animation: stretchingBars 3s ease-in-out 0.4s infinite;
+}
+
+.visualTwo:nth-child(3) {
+  animation: stretchingBars 3s ease-in-out 0.8s infinite;
+}
+
+.visualTwo:nth-child(4) {
+  animation: stretchingBars 3s ease-in-out 1.2s infinite;
+}
+
+.visualTwo:last-child {
+  animation: stretchingBars 3s ease-in-out 1.6s infinite;
+}
+
+@keyframes stretchingBars {
+  25% {
+    width: 9px;
+  } 50% {
+    width: 5px;
+  }
+}
