@@ -1,5 +1,6 @@
 body {
   background-color: rgb(225, 255, 255);
+  overflow-x: hidden;
 }
 
 /* TOP INFO */
@@ -203,10 +204,6 @@ h1 {
 
 #iconThree p span:nth-child(6) {
   animation: iconThreeLoading 2s ease-in 1.0s infinite;
-}
-
-#iconThree p span:nth-child(7){
-  animation: iconThreeLoading 2s ease-in 1.2s infinite;
 }
 
 #iconThree p span:last-child {

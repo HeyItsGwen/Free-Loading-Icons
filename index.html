@@ -48,12 +48,12 @@
           <div class='visualOne'></div>
           <div class='visualOne'></div>
         </div>
-        <div class='showButton'>
+        <div class='showButton' onclick=''>
           <p>Get The Code</p>
           <code class='hideShow'>
             <pre>
-                HTML
-
+                HTML&lt;&gt;
+                
                 &lt;div id='visualOne'&gt;
                   &lt;div class='visualOne'&gt;&lt;/div&gt;
                   &lt;div class='visualOne'&gt;&lt;/div&gt;
@@ -62,15 +62,14 @@
                   &lt;div class='visualOne'&gt;&lt;/div&gt;
                 &lt;/div&gt;
 
-                CSS
+                CSS{}
 
                 #visualOne {
                   display: flex;
                   flex-direction: row;
                   height: 30px;
                   align-items: center;
-                }
-                
+                }                
                 .visualOne {
                   height: 30px;
                   width: 6px;
@@ -79,28 +78,22 @@
                   margin: 0 1px;
                   /* BACKGROUND COLOR FOR THE BARS */
                   background-color: white;
-                }
-                
+                }                
                 .visualOne:first-child {
                   animation: bouncingBars 3s ease-in-out infinite;
-                }
-                
+                }                
                 .visualOne:nth-child(2) {
                   animation: bouncingBars 3s ease-in-out 0.3s infinite;
-                }
-                
+                }                
                 .visualOne:nth-child(3) {
                   animation: bouncingBars 3s ease-in-out 0.6s infinite;
-                }
-                
+                }                
                 .visualOne:nth-child(4) {
                   animation: bouncingBars 3s ease-in-out 0.9s infinite;
-                }
-                
+                }                
                 .visualOne:last-child {
                   animation: bouncingBars 3s ease-in-out 1.2s infinite;
-                }
-                
+                }                
                 @keyframes bouncingBars {
                   25% {
                     height: 15px;
@@ -126,7 +119,63 @@
           <div class='visualTwo'></div>
           <div class='visualTwo'></div>
         </div>
+        <div class='showButton'>
+          <p>Get The Code</p>
+          <code class='hideShow'>
+            <pre>
+              HTML&lt;&gt;
+
+              &lt;div id='visualTwo'&gt;
+                &lt;div class='visualTwo'&gt;&lt;/div&gt;
+                &lt;div class='visualTwo'&gt;&lt;/div&gt;
+                &lt;div class='visualTwo'&gt;&lt;/div&gt;
+                &lt;div class='visualTwo'&gt;&lt;/div&gt;
+                &lt;div class='visualTwo'&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+              CSS{}
+
+              #visualTwo {
+                height: 30px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+              }              
+              .visualTwo {
+                height: 30px;
+                width: 5px;
+                /* YOUR PREFERED BORDER COLOR */
+                border: 1px solid rgb(73, 73, 73);
+                /* BACKGROUND COLOR FOR THE BARS */
+                background-color: white;
+                margin: 0 1px;
+              }              
+              .visualTwo:first-child {
+                animation: stretchingBars 2s ease-in-out infinite;
+              }              
+              .visualTwo:nth-child(2) {
+                animation: stretchingBars 2s ease-in-out 0.4s infinite;
+              }              
+              .visualTwo:nth-child(3) {
+                animation: stretchingBars 2s ease-in-out 0.8s infinite;
+              }              
+              .visualTwo:nth-child(4) {
+                animation: stretchingBars 2s ease-in-out 1.2s infinite;
+              }              
+              .visualTwo:last-child {
+                animation: stretchingBars 2s ease-in-out 1.6s infinite;
+              }              
+              @keyframes stretchingBars {
+                20% {
+                  width: 9px;
+                } 45% {
+                  width: 5px;
+                }
+              }
+            </pre>
+          </code>
         </div>
+      </div>
       </div>
 
     </section>
@@ -144,7 +193,67 @@
           <div class='visualThree'></div>
           <div class='visualThree'></div>
         </div>
+        <div class='showButton'>
+          <p>Get The Code</p>
+          <code class='hideShow'>
+            <pre>
+              HTML&lt;&gt;
+
+              &lt;div id='visualThree'&gt;
+                &lt;div class='visualThree'&gt;&lt;/div&gt;
+                &lt;div class='visualThree'&gt;&lt;/div&gt;
+                &lt;div class='visualThree'&gt;&lt;/div&gt;
+                &lt;div class='visualThree'&gt;&lt;/div&gt;
+                &lt;div class='visualThree'&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+              CSS{}
+  
+              #visualThree {
+                height: 30px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+              }              
+              .visualThree {
+                height: 30px;
+                width: 5px;
+                /* YOUR PREFERED BORDER COLOR */
+                border: 1px solid rgb(73, 73, 73);
+                /* BACKGROUND COLOR FOR THE BARS */
+                background-color: white;
+                margin: 0 1px;
+              }              
+              .visualThree:first-child {
+                animation: bounceAndStretch 3s ease-in-out infinite;
+              }              
+              .visualThree:nth-child(2) {
+                animation: bounceAndStretch 3s ease-in-out 0.3s infinite;
+              }              
+              .visualThree:nth-child(3) {
+                animation: bounceAndStretch 3s ease-in-out 0.6s infinite;
+              }              
+              .visualThree:nth-child(4) {
+                animation: bounceAndStretch 3s ease-in-out 0.9s infinite;
+              }              
+              .visualThree:last-child {
+                animation: bounceAndStretch 3s ease-in-out 1.2s infinite;
+              }              
+              @keyframes bounceAndStretch {
+                20% {
+                  height: 15px;
+                  width: 12px;
+                } 45% {
+                  width: 5px;
+                  height: 30px;
+                }
+              }
+                
+            </pre>
+          </code>
         </div>
+      </div>
       </div>
 
     </section>
@@ -161,7 +270,83 @@
           <div class='visualFour'></div>
           <div class='visualFour'></div>
         </div>
+        <div class='showButton'>
+          <p>Get The Code</p>
+          <code class='hideShow'>
+            <pre>
+              HTML&lt;&gt;
+              
+              &lt;div id='visualFour'&gt;
+                &lt;div class='visualFour'&gt;&lt;/div&gt;
+                &lt;div class='visualFour'&gt;&lt;/div&gt;
+                &lt;div class='visualFour'&gt;&lt;/div&gt;
+                &lt;div class='visualFour'&gt;&lt;/div&gt;
+                &lt;div class='visualFour'&gt;&lt;/div&gt;
+                &lt;div class='visualFour'&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+              CSS{}
+
+              #visualFour {
+                height: 50px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }              
+              .visualFour {
+                width: 10px;
+                height: 45px;
+                /* YOUR PREFERRED COLOR/WIDTH OF LINE */
+                border-top: 2px solid rgb(73, 73, 73);
+                border-radius: 2px;
+              }              
+              .visualFour:first-child {
+                animation: visualFourRotate 3s ease-in-out infinite;
+              }              
+              .visualFour:nth-child(2) {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFourRotate 3s ease-in-out 0.2s infinite;
+              }              
+              .visualFour:nth-child(3) {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFourRotate 3s ease-in-out 0.4s infinite;
+              }              
+              .visualFour:nth-child(4) {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFourRotate 3s ease-in-out 0.6s infinite;
+              }              
+              .visualFour:nth-child(5) {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFourRotate 3s ease-in-out 0.8s infinite;
+              }              
+              .visualFour:last-child {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFourRotate 3s ease-in-out 1s infinite;
+              }              
+              @keyframes visualFourRotate {
+                80% {
+                  transform: rotate(360deg);
+                }
+                100% {
+                  transform: rotate(360deg);
+                }
+              }
+                
+            </pre>
+          </code>
         </div>
+      </div>
       </div>
 
     </section>
@@ -184,6 +369,95 @@
             <div class='visualFive'></div>
           </div>
         </div>
+        <div class='showButton'>
+          <p>Get The Code</p>
+          <code class='hideShow'>
+            <pre>
+              HTML&lt;&gt;
+              &lt;div id='visualFive'&gt;
+                &lt;div class='visualFive'&gt;&lt;/div&gt;
+                &lt;div class='visualFive'&gt;&lt;/div&gt;
+                &lt;div class='visualFive'&gt;&lt;/div&gt;
+                &lt;div class='visualFive'&gt;&lt;/div&gt;
+                &lt;div class='visualFive'&gt;&lt;/div&gt;
+                &lt;div class='visualFive'&gt;&lt;/div&gt;
+                &lt;div class='visualFive'&gt;&lt;/div&gt;
+                &lt;div class='visualFive'&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+              CSS{}
+  
+              #visualFive {
+                height: 50px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }              
+              .visualFive {
+                width: 3px;
+                height: 45px;
+                /* YOUR PREFERRED COLOR/WIDTH OF LINE */
+                border-top: 2px dotted rgb(73, 73, 73);
+                border-radius: 2px;
+              }              
+              .visualFive:first-child {
+                animation: visualFiveRotate 3s ease-in-out infinite;
+              }              
+              .visualFive:nth-child(2) {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFiveRotate 3s ease-in-out 0.2s infinite;
+              }              
+              .visualFive:nth-child(3) {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFiveRotate 3s ease-in-out 0.4s infinite;
+              }              
+              .visualFive:nth-child(4) {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFiveRotate 3s ease-in-out 0.6s infinite;
+              }              
+              .visualFive:nth-child(5) {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFiveRotate 3s ease-in-out 0.8s infinite;
+              }              
+              .visualFive:nth-child(6) {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFiveRotate 3s ease-in-out 1s infinite;
+              }              
+              .visualFive:nth-child(7) {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFiveRotate 3s ease-in-out 1.2s infinite;
+              }              
+              .visualFive:last-child {
+                position: relative;
+                left: -10px;
+                margin-right: -10px;
+                animation: visualFiveRotate 3s ease-in-out 1.4s infinite;
+              }              
+              @keyframes visualFiveRotate {
+                80% {
+                  transform: rotate(360deg);
+                }
+                100% {
+                  transform: rotate(360deg);
+                }
+              }
+                
+            </pre>
+          </code>
+        </div>
       </div>
       </div>
 
@@ -200,6 +474,82 @@
           <div class='visualSix'></div>
           <div class='visualSix'></div>
           <div class='visualSix'></div>
+        </div>
+        <div class='showButton'>
+          <p>Get The Code</p>
+          <code class='hideShow'>
+            <pre>
+              HTML&lt;&gt;
+
+              &lt;div id='visualSix'>
+              &lt;div class='visualSix'&gt;&lt;/div&gt;
+              &lt;div class='visualSix'&gt;&lt;/div&gt;
+              &lt;div class='visualSix'&gt;&lt;/div&gt;
+              &lt;div class='visualSix'&gt;&lt;/div&gt;
+              &lt;div class='visualSix'&gt;&lt;/div&gt;
+              &lt;div class='visualSix'&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+              CSS{}
+  
+              #visualSix {
+                height: 50px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }              
+              .visualSix {
+                width: 3px;
+                height: 45px;
+                /* YOUR PREFERRED COLOR/WIDTH OF LINE */
+                border-top: 2px dotted rgb(73, 73, 73);
+                border-radius: 2px;
+              }              
+              .visualSix:first-child {
+                animation: visualSixRotate 3s ease-in-out infinite;
+              }              
+              .visualSix:nth-child(2) {
+                position: relative;
+                left: -3px;
+                margin-right: -3px;
+                animation: visualSixRotate 3s ease-in-out 0.2s infinite;
+              }              
+              .visualSix:nth-child(3) {
+                position: relative;
+                left: -3px;
+                margin-right: -3px;
+                animation: visualSixRotate 3s ease-in-out 0.4s infinite;
+              }              
+              .visualSix:nth-child(4) {
+                position: relative;
+                left: -3px;
+                margin-right: -3px;
+                animation: visualSixRotate 3s ease-in-out 0.6s infinite;
+              }              
+              .visualSix:nth-child(5) {
+                position: relative;
+                left: -3px;
+                margin-right: -3px;
+                animation: visualSixRotate 3s ease-in-out 0.8s infinite;
+              }              
+              .visualSix:last-child {
+                position: relative;
+                left: -3px;
+                margin-right: -3px;
+                animation: visualSixRotate 3s ease-in-out 1s infinite;
+              }              
+              @keyframes visualSixRotate {
+                80% {
+                  transform: rotate(360deg);
+                }
+                100% {
+                  transform: rotate(360deg);
+                }
+              }
+                
+            </pre>
+          </code>
         </div>
       </div>
 
@@ -222,6 +572,63 @@
             <span class='loadingDotThree'>.</span>
           </p>
         </div>
+        <div class='showButton'>
+          <p>Get The Code</p>
+          <code class='hideShow'>
+            <pre>
+              HTML&lt;&gt;
+
+              &lt;div id='iconOne'&gt;
+                &lt;p&gt;
+                  &lt;span class='loading'&gt;Loading&lt;/span&gt;
+                  &lt;span class='loadingDotOne'&gt;.&lt;/span&gt;
+                  &lt;span class='loadingDotTwo'&gt;.&lt;/span&gt;
+                  &lt;span class='loadingDotThree'&gt;.&lt;/span&gt;
+                &lt;/p&gt;
+              &lt;/div&gt;
+
+              CSS{}
+  
+              #iconOne {
+                color: rgb(73, 73, 73);
+                font-weight: bold; 
+              }              
+              #iconOne .loading {
+                animation: iconOneLoading 2.5s ease-in-out infinite;
+              }              
+              #iconOne .loadingDotOne {
+                animation: iconOneDots 2s ease-in 0.2s infinite;
+              }              
+              #iconOne .loadingDotTwo {
+                animation: iconOneDots 2s ease-in 0.8s infinite;
+              }              
+              #iconOne .loadingDotThree {
+                animation: iconOneDots 2s ease-in 1.3s infinite; 
+              }              
+              @keyframes  iconOneDots {
+                30% {
+                  /* BACKGROUND COLOR */
+                  color: rgb(225, 255, 255);
+                }
+                50% {
+                  /* WANTED FONT COLOR*/
+                  color: rgb(127, 146, 146);
+                }
+              }              
+              @keyframes iconOneLoading {
+                10% {
+                  /* LIGHTER VERSION OF YOUR FONT COLOR */
+                  color: rgb(136, 136, 136);
+                }
+                60% {
+                  /* YOUR FONT COLOR */
+                  color: rgb(73, 73, 73);
+                }
+              }
+                
+            </pre>
+          </code>
+        </div>
       </div>
 
     </section>
@@ -234,6 +641,37 @@
         <h2>Small Caps Fade</h2>
         <div id='iconTwo'>
           <p>loading</p>
+        </div>
+        <div class='showButton'>
+          <p>Get The Code</p>
+          <code class='hideShow'>
+            <pre>
+              HTML&lt;&gt;
+
+              &lt;div id='iconTwo'&gt;
+                &lt;p&gt;loading&lt;/p&gt;
+              &lt;/div&gt;
+
+              CSS{}
+  
+              #iconTwo p {
+                animation: iconTwoLoading 2s ease-in-out infinite;
+              }              
+              @keyframes iconTwoLoading {
+                50% {
+                  /* FONT STYLE YOU WANT TO CHANGE TO */
+                  font-weight: bold;
+                  font-variant: small-caps;
+                }
+                100% {
+                  /* STARTING FONT STYLE */
+                  font-weight: normal;
+                  font-variant: normal;
+                }
+              }
+                
+            </pre>
+          </code>
         </div>
       </div>
 
@@ -248,12 +686,68 @@
             <span>l</span>
             <span>o</span>
             <span>a</span>
-            <span></span>
             <span>d</span>
             <span>i</span>
             <span>n</span>
             <span>g</span>
           </p>
+        </div>
+        <div class='showButton'>
+          <p>Get The Code</p>
+          <code class='hideShow'>
+            <pre>
+              HTML&lt;&gt;
+
+              &lt;div id='iconThree'>
+                &lt;p>
+                  &lt;span&gt;l&lt;/span&gt;
+                  &lt;span&gt;o&lt;/span&gt;
+                  &lt;span&gt;a&lt;/span&gt;
+                  &lt;span&gt;d&lt;/span&gt;
+                  &lt;span&gt;i&lt;/span&gt;
+                  &lt;span&gt;n&lt;/span&gt;
+                  &lt;span&gt;g&lt;/span&gt;
+                &lt;/p&gt;
+              &lt;/div&gt;
+
+              CSS{}
+  
+              #iconThree p span:nth-child(1) {
+                animation: iconThreeLoading 2s ease-in infinite;
+              }              
+              #iconThree p span:nth-child(2) {
+                animation: iconThreeLoading 2s ease-in 0.2s infinite;
+              }              
+              #iconThree p span:nth-child(3) {
+                animation: iconThreeLoading 2s ease-in 0.4s infinite;
+              }              
+              #iconThree p span:nth-child(4) {
+                animation: iconThreeLoading 2s ease-in 0.6s infinite;
+              }              
+              #iconThree p span:nth-child(5) {
+                animation: iconThreeLoading 2s ease-in 0.8s infinite;
+              }              
+              #iconThree p span:nth-child(6) {
+                animation: iconThreeLoading 2s ease-in 1.0s infinite;
+              }                          
+              #iconThree p span:last-child {
+                animation: iconThreeLoading 2s ease-in 1.4s infinite;
+              }              
+              @keyframes iconThreeLoading {
+                50% {
+                  /* FONT STYLE YOU WANT TO CHANGE TO */
+                  font-weight: bold;
+                  font-variant: small-caps;
+                }
+                100% {
+                  /* STARTING FONT STYLE */
+                  font-weight: bold;
+                  font-variant: normal;
+                }
+              }  
+
+            </pre>
+          </code>
         </div>
       </div>
 
@@ -268,6 +762,52 @@
         <div id='iconFour'>
           <p>Loading</p>
         </div>
+        <div class='showButton'>
+          <p>Get The Code</p>
+          <code class='hideShow'>
+            <pre>
+              HTML&lt;&gt;
+
+              &lt;div id='iconFour'&gt;
+                &lt;p>Loading&lt;/p&gt;
+              &lt;/div&gt;
+
+              CSS{}
+
+              #iconFour::before {
+                content: '';
+                display: block;
+                width: 100%;
+                margin: auto;
+                border-bottom: 1px solid rgb(73, 73, 73);
+                animation: iconFourTop 2s ease-out infinite;
+              }              
+              #iconFour::after {
+                content: '';
+                display: block;
+                width: 0;
+                margin: -12px auto auto auto;
+                border-top: 1px solid rgb(73, 73, 73);
+                animation: iconFourBottom 2s ease-in infinite;
+              }              
+              @keyframes iconFourTop {
+                50% {
+                  width: 0;
+                } 100% {
+                  width: 100%;
+                }
+              }              
+              @keyframes iconFourBottom {
+                50% {
+                  width: 100%;
+                } 100% {
+                  width: 0;
+                }
+              }
+                
+            </pre>
+          </code>
+        </div>
       </div>
 
     </section>
@@ -279,15 +819,55 @@
         <div id='iconFive'>
           <p>Loading</p>
         </div>
+        <div class='showButton'>
+          <p>Get The Code</p>
+          <code class='hideShow'>
+            <pre>
+              HTML&lt;&gt;
+
+              &lt;div id='iconFive'&gt;
+                &lt;p>Loading&lt;/p&gt;
+              &lt;/div&gt;
+
+              CSS{}
+  
+              #iconFive p {
+                border: 1px solid rgb(73, 73, 73);
+                animation: iconFive 3s infinite;
+                padding: 2px 5px 5px 5px;
+              }              
+              @keyframes iconFive {
+                10% {
+                  /* YOUR BACKGROUND COLOR */
+                  border-right: 1px solid rgb(225, 255, 255);
+                } 30% {
+                  /* YOUR BACKGROUND COLOR */
+                  border-bottom: 1px solid rgb(225, 255, 255);
+                } 65% {
+                  /* YOUR BACKGROUND COLOR */
+                  border-left: 1px solid rgb(225, 255, 255);
+                } 90% {
+                  /* YOUR BACKGROUND COLOR */
+                  border-top: 1px solid rgb(225, 255, 255);
+                } 100% {
+                  /* ORIGINAL BORDER  */
+                  border-right: 1px solid rgb(73, 73, 73);
+                }
+              }
+
+            </pre>
+          </code>
+        </div>
       </div>
 
     </section>
 
   </main>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+  <script src='./js/icons.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
