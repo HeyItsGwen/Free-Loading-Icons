@@ -121,3 +121,22 @@ h1 {
     color: rgb(73, 73, 73);
   }
 }
+
+/* ICON TWO */
+
+#iconTwo p {
+  animation: iconTwoLoading 2s ease-in-out infinite;
+}
+
+@keyframes iconTwoLoading {
+  50% {
+    /* FONT STYLE YOU WANT TO CHANGE TO */
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+  100% {
+    /* STARTING FONT STYLE */
+    font-weight: normal;
+    font-variant: normal;
+  }
+}
