@@ -265,3 +265,51 @@ h1 {
     border-right: 1px solid rgb(73, 73, 73);
   }
 }
+
+/* VISUAL ONE */
+
+#visualOne {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  align-items: center;
+}
+
+.visualOne {
+  height: 30px;
+  width: 6px;
+  border: 1px solid rgb(73, 73, 73);
+  margin: 0 1px;
+  background-color: white;
+}
+
+.visualOne:first-child {
+  animation: bouncingBars 3s ease-in-out infinite;
+}
+
+.visualOne:nth-child(2) {
+  animation: bouncingBars 3s ease-in-out 0.3s infinite;
+}
+
+.visualOne:nth-child(3) {
+  animation: bouncingBars 3s ease-in-out 0.6s infinite;
+}
+
+.visualOne:nth-child(4) {
+  animation: bouncingBars 3s ease-in-out 0.9s infinite;
+}
+
+.visualOne:last-child {
+  animation: bouncingBars 3s ease-in-out 1.2s infinite;
+}
+
+@keyframes bouncingBars {
+  25% {
+    height: 15px;
+  } 50% {
+    height: 30px;
+  }
+}
+
+/* VISUAL TWO */
+
