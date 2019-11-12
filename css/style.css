@@ -43,6 +43,21 @@ h1 {
   color: rgb(111, 172, 172);
 }
 
+/* TITLE BITS */
+
+.titleBit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.titleBit h1 {
+  font-size: 1.7em;
+}
+
 /* LOGO SECTIONS */
 
 .iconSection {
@@ -221,5 +236,32 @@ h1 {
     width: 100%;
   } 100% {
     width: 0;
+  }
+}
+
+/* ICON FIVE */
+
+#iconFive p {
+  border: 1px solid rgb(73, 73, 73);
+  animation: iconFive 3s infinite;
+  padding: 2px 5px 5px 5px;
+}
+
+@keyframes iconFive {
+  10% {
+    /* YOUR BACKGROUND COLOR */
+    border-right: 1px solid rgb(225, 255, 255);
+  } 30% {
+    /* YOUR BACKGROUND COLOR */
+    border-bottom: 1px solid rgb(225, 255, 255);
+  } 65% {
+    /* YOUR BACKGROUND COLOR */
+    border-left: 1px solid rgb(225, 255, 255);
+  } 90% {
+    /* YOUR BACKGROUND COLOR */
+    border-top: 1px solid rgb(225, 255, 255);
+  } 100% {
+    /* ORIGINAL BORDER  */
+    border-right: 1px solid rgb(73, 73, 73);
   }
 }
