@@ -1,0 +1,123 @@
+body {
+  background-color: rgb(225, 255, 255);
+}
+
+/* TOP INFO */
+
+#topInfo {
+  border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+#titleBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+h1 {
+  font-weight: bold;
+  color: rgb(73, 73, 73);
+}
+
+#infoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 15px 25px;
+  color: rgb(73, 73, 73);
+}
+
+#infoBox p {
+  margin: 5px;
+}
+
+#infoBox a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.5s;
+}
+
+#infoBox a:hover {
+  color: rgb(111, 172, 172);
+}
+
+/* LOGO SECTIONS */
+
+.iconSection {
+  margin-top: 20px;
+}
+
+.divIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divIcon h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  color: rgb(73, 73, 73);
+}
+
+.divIcon h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 7px;
+  margin-top: 3px;
+  border-top: 1px solid rgb(73, 73, 73);
+  border-right: 1px solid rgb(73, 73, 73);
+}
+
+.h2Right h2::after {
+  border-right: none;
+  border-left: 1px solid rgb(73, 73, 73);
+}
+
+/* ICON ONE */
+
+#iconOne {
+  color: rgb(73, 73, 73);
+  font-weight: bold; 
+}
+
+#iconOne .loading {
+  animation: iconOneLoading 2.5s ease-in-out infinite;
+}
+
+#iconOne .loadingDotOne {
+  animation: iconOneDots 2s ease-in 0.2s infinite;
+}
+
+#iconOne .loadingDotTwo {
+  animation: iconOneDots 2s ease-in 0.8s infinite;
+}
+
+#iconOne .loadingDotThree {
+  animation: iconOneDots 2s ease-in 1.3s infinite; 
+}
+
+@keyframes  iconOneDots {
+  30% {
+    /* BACKGROUND COLOR */
+    color: rgb(225, 255, 255);
+  }
+  50% {
+    /* WANTED FONT COLOR*/
+    color: rgb(127, 146, 146);
+  }
+}
+
+@keyframes iconOneLoading {
+  10% {
+    /* LIGHTER VERSION OF YOUR FONT COLOR */
+    color: rgb(136, 136, 136);
+  }
+  60% {
+    /* YOUR FONT COLOR */
+    color: rgb(73, 73, 73);
+  }
+}
