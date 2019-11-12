@@ -282,6 +282,8 @@ h1 {
   border: 1px solid rgb(73, 73, 73);
   margin: 0 1px;
   /* BACKGROUND COLOR FOR THE BARS */
+  border: 1px solid rgb(73, 73, 73);
+  margin: 0 1px;
   background-color: white;
 }
 
@@ -359,3 +361,4 @@ h1 {
     width: 5px;
   }
 }
+
