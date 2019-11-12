@@ -151,6 +151,10 @@ h1 {
   margin: 0;
 }
 
+.showButton p:hover {
+  cursor: pointer;
+}
+
 .hideShow {
   visibility: hidden;
   position: absolute;
