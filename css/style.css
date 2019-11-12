@@ -399,6 +399,7 @@ h1 {
 .visualThree:last-child {
   animation: bounceAndStretch 3s ease-in-out 1.2s infinite;
 }
+
 @keyframes bounceAndStretch {
   20% {
     height: 15px;
@@ -406,5 +407,71 @@ h1 {
   } 45% {
     width: 5px;
     height: 30px;
+  }
+}
+
+/* VISUAL FOUR */
+
+#visualFour {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visualFour {
+  width: 10px;
+  height: 45px;
+  /* YOUR PREFERRED COLOR/WIDTH OF LINE */
+  border-top: 2px solid rgb(73, 73, 73);
+  border-radius: 2px;
+}
+
+.visualFour:first-child {
+  animation: visualFourRotate 3s ease-in-out infinite;
+}
+
+.visualFour:nth-child(2) {
+  position: relative;
+  left: -10px;
+  margin-right: -10px;
+  animation: visualFourRotate 3s ease-in-out 0.2s infinite;
+}
+
+.visualFour:nth-child(3) {
+  position: relative;
+  left: -10px;
+  margin-right: -10px;
+  animation: visualFourRotate 3s ease-in-out 0.4s infinite;
+}
+
+.visualFour:nth-child(4) {
+  position: relative;
+  left: -10px;
+  margin-right: -10px;
+  animation: visualFourRotate 3s ease-in-out 0.6s infinite;
+}
+
+.visualFour:nth-child(5) {
+  position: relative;
+  left: -10px;
+  margin-right: -10px;
+  animation: visualFourRotate 3s ease-in-out 0.8s infinite;
+}
+
+.visualFour:last-child {
+  position: relative;
+  left: -10px;
+  margin-right: -10px;
+  animation: visualFourRotate 3s ease-in-out 1s infinite;
+}
+
+@keyframes visualFourRotate {
+  80% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
