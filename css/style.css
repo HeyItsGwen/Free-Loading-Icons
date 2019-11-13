@@ -160,9 +160,8 @@ h1 {
   position: absolute;
 }
 
-.showButton:hover code {
-  visibility: visible;
-  position: static;
+.closer {
+  text-align: center;
 }
 
 /* ICON TWO */
