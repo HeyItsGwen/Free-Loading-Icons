@@ -11,7 +11,7 @@
 
 It's a bunch of loading icons made with only HTML and CSS! All icons are free to use and open source under the Apache 2.0 License. Just open the site with the link below, find the icon you want to use, and hit the 'Get The Code' button.
 
-###[Gwens Free Loading Icons](http://heyitsgwen.github.io/Free-Loading-Icons/index.html)
+### [Gwens Free Loading Icons](http://heyitsgwen.github.io/Free-Loading-Icons/index.html)
 
 Each icon is ready to use, just copy and paste the HTML and CSS into your project and move on to more important things. There are also instructions contained within the CSS, so they can be customized and styled to your specific needs.
 
@@ -27,5 +27,5 @@ These icons are all free to use for any project, and are open source under the [
 
 My name is Gwen, as you might have guessed. I'm a developer in training at Microverse, an online school for software development. I've also learned from Free Code Camp, Codeacademy, and a few W3 courses.
 
-My Github: (HeyItsGwen)[https://github.com/HeyItsGwen]
-My LinkedIn: (Gwen Hey)[https://www.linkedin.com/in/gwen-hey-642109191/]
+My Github: [HeyItsGwen](https://github.com/HeyItsGwen)
+My LinkedIn: [Gwen Hey](https://www.linkedin.com/in/gwen-hey-642109191/)
