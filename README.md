@@ -1,4 +1,4 @@
-# Gwens-Free-Loading-Icons
+# Gwens Free Loading Icons~
 
 * [About](#about)
 * [Technical Information](#technical-information)
