@@ -1,4 +1,9 @@
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
   background-image: linear-gradient(to right, rgb(199, 255, 255), rgb(240, 255, 255));
 }
 
@@ -193,6 +198,11 @@ nav .titleBit {
 .hideShow {
   visibility: hidden;
   position: absolute;
+}
+
+pre {
+  word-wrap: normal;
+  margin-left: -100px;
 }
 
 .closer {
@@ -683,9 +693,12 @@ nav .titleBit {
 /* FOOTER */
 
 footer {
+  position: relative;
+  top: 30px;
+  padding-top: 5px;
   display: flex;
   font-size: 0.8em;
   justify-content: space-around;
-  height: 20px;
+  height: 25px;
   border-top: 1px solid rgb(73, 73, 73);
 }
