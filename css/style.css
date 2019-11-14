@@ -141,7 +141,7 @@ nav .titleBit {
 }
 
 #iconOne .loading {
-  animation: iconOneLoading 2.5s ease-in-out infinite;
+  animation: iconOneLoading 2s ease-in-out infinite;
 }
 
 #iconOne .loadingDotOne {
