@@ -90,18 +90,25 @@
                     #visualOne {
                       display: flex;
                       flex-direction: row;
+                      /* HEIGHT OF THE CONTAINER FOR THE BARS*/
                       height: 30px;
                       align-items: center;
                     }                
                     .visualOne {
+                      /* STARTING HEIGHT AND WIDTH OF THE BARS */
                       height: 30px;
                       width: 6px;
-                      /* YOUR PREFERED BORDER COLOR */
+                      /* YOUR PREFERED BORDER COLOR/SIZE */
                       border: 1px solid rgb(73, 73, 73);
+                      /* SPACE BETWEEN EACH BAR */
                       margin: 0 1px;
                       /* BACKGROUND COLOR FOR THE BARS */
                       background-color: white;
-                    }                
+                    }
+                    /* '3s' AFTER bouncingBars IS LENGTH 
+                    OF THE ENTIRE ANIMATION */
+                    /* TIME AFTER ease-in-out IS THE DELAY 
+                    FOR EACH BLOCK'S ANIMATION */
                     .visualOne:first-child {
                       animation: bouncingBars 3s ease-in-out infinite;
                     }                
@@ -119,8 +126,10 @@
                     }                
                     @keyframes bouncingBars {
                       25% {
+                        /* HEIGHT YOU WANT THE BARS TO CHANGE TO*/
                         height: 15px;
                       } 50% {
+                        /* SAME AS ORIGINAL HEIGHT IN .visualOne */
                         height: 30px;
                       }
                     }
@@ -160,20 +169,28 @@
                   CSS{}
     
                   #visualTwo {
+                    /* HEIGHT OF BAR CONTAINER */
                     height: 30px;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                   }              
                   .visualTwo {
+                    /* HEIGHT AND WIDTH OF EACH BAR */
                     height: 30px;
                     width: 5px;
                     /* YOUR PREFERED BORDER COLOR */
                     border: 1px solid rgb(73, 73, 73);
                     /* BACKGROUND COLOR FOR THE BARS */
                     background-color: white;
+                    /* SPACE BETWEEN EACH BAR */
                     margin: 0 1px;
-                  }              
+                  
+                  }   
+                  /* '2s' AFTER stretchingBars IS LENGTH 
+                    OF THE ENTIRE ANIMATION */
+                  /* TIME AFTER ease-in-out IS THE DELAY 
+                  FOR EACH BLOCK'S ANIMATION */           
                   .visualTwo:first-child {
                     animation: stretchingBars 2s ease-in-out infinite;
                   }              
@@ -191,8 +208,10 @@
                   }              
                   @keyframes stretchingBars {
                     20% {
+                      /* WIDTH EACH BAR CHANGED TO */
                       width: 9px;
                     } 45% {
+                      /* ORIGINIAL WIDTH OF EACH BAR*/
                       width: 5px;
                     }
                   }
@@ -235,6 +254,7 @@
                   CSS{}
       
                   #visualThree {
+                    /* HEIGHT OF THE BAR CONTAINER */
                     height: 30px;
                     display: flex;
                     flex-direction: row;
@@ -242,14 +262,20 @@
                     align-items: center;
                   }              
                   .visualThree {
+                    /* ORIGINAL HEIGHT AND WIDTH OF EACH BAR */
                     height: 30px;
                     width: 5px;
                     /* YOUR PREFERED BORDER COLOR */
                     border: 1px solid rgb(73, 73, 73);
                     /* BACKGROUND COLOR FOR THE BARS */
                     background-color: white;
+                    /* SPACE BETWEEN EACH BAR */
                     margin: 0 1px;
-                  }              
+                  }
+                  /* '3s' AFTER BOUNCING BARS IS LENGTH 
+                  OF THE ENTIRE ANIMATION */
+                  /* TIME AFTER ease-in-out IS THE DELAY 
+                  FOR EACH BLOCK'S ANIMATION */      
                   .visualThree:first-child {
                     animation: bounceAndStretch 3s ease-in-out infinite;
                   }              
@@ -267,14 +293,15 @@
                   }              
                   @keyframes bounceAndStretch {
                     20% {
+                      /* HEIGHT AND WIDTH EACH BAR CHANGES TO */
                       height: 15px;
                       width: 12px;
                     } 45% {
+                      /* ORIGINAL HEIGHT AND WIDTH*/
                       width: 5px;
                       height: 30px;
                     }
-                  }
-                    
+                  }                    
                 </pre>
               </code>
           </div>
@@ -314,6 +341,7 @@
                   CSS{}
     
                   #visualFour {
+                    /* HEIGHT/WIDTH OF THE CONTAINER */
                     height: 50px;
                     width: 50px;
                     display: flex;
@@ -321,12 +349,17 @@
                     align-items: center;
                   }              
                   .visualFour {
+                    /* HEIGHT/WIDTH OF EACH BAR */
                     width: 10px;
                     height: 45px;
                     /* YOUR PREFERRED COLOR/WIDTH OF LINE */
                     border-top: 2px solid rgb(73, 73, 73);
                     border-radius: 2px;
-                  }              
+                  }
+                  /* '3s' AFTER visualFourRotate IS LENGTH 
+                  OF THE ENTIRE ANIMATION */
+                  /* TIME AFTER ease-in-out IS THE DELAY 
+                  FOR EACH BLOCK'S ANIMATION */        
                   .visualFour:first-child {
                     animation: visualFourRotate 3s ease-in-out infinite;
                   }              
@@ -362,13 +395,15 @@
                   }              
                   @keyframes visualFourRotate {
                     80% {
+                      /* HOW FAR THE BARS ROTATE */
                       transform: rotate(360deg);
                     }
                     100% {
+                      /* WHERE THE BARS END UP 
+                      BEFORE THE ANIMATION RESTARTS */
                       transform: rotate(360deg);
                     }
-                  }
-                    
+                  }                    
                 </pre>
               </code>
           </div>
@@ -415,6 +450,7 @@
                   CSS{}
       
                   #visualFive {
+                    /* HEIGHT/WIDTH OF THE CONTAINER */
                     height: 50px;
                     width: 50px;
                     display: flex;
@@ -422,12 +458,17 @@
                     align-items: center;
                   }              
                   .visualFive {
+                    /* HEIGHT/WIDTH OF EACH BAR/DOT */
                     width: 3px;
                     height: 45px;
                     /* YOUR PREFERRED COLOR/WIDTH OF LINE */
                     border-top: 2px dotted rgb(73, 73, 73);
                     border-radius: 2px;
-                  }              
+                  }             
+                  /* '3s' AFTER visualFiveRotate IS LENGTH 
+                  OF THE ENTIRE ANIMATION */
+                  /* TIME AFTER ease-in-out IS THE DELAY 
+                  FOR EACH BLOCK'S ANIMATION */ 
                   .visualFive:first-child {
                     animation: visualFiveRotate 3s ease-in-out infinite;
                   }              
@@ -475,13 +516,14 @@
                   }              
                   @keyframes visualFiveRotate {
                     80% {
+                      /* AMOUNT EACH DOT ROTATES */
                       transform: rotate(360deg);
                     }
                     100% {
+                      /* WHERE EACH DOT ENDS BEFORE ANIMATION RESET */
                       transform: rotate(360deg);
                     }
-                  }
-                    
+                  }                    
                 </pre>
               </code>
           </div>
@@ -521,6 +563,7 @@
                   CSS{}
       
                   #visualSix {
+                    /* HEIGHT/WIDTH OF THE CONTAINER */
                     height: 50px;
                     width: 50px;
                     display: flex;
@@ -528,12 +571,17 @@
                     align-items: center;
                   }              
                   .visualSix {
+                    /* WIDTH OF EACH DOT */
                     width: 3px;
                     height: 45px;
                     /* YOUR PREFERRED COLOR/WIDTH OF LINE */
                     border-top: 2px dotted rgb(73, 73, 73);
                     border-radius: 2px;
-                  }              
+                  }
+                  /* '3s' AFTER visualSixRotate IS LENGTH 
+                   OF THE ENTIRE ANIMATION */
+                  /* TIME AFTER ease-in-out IS THE DELAY 
+                  FOR EACH BLOCK'S ANIMATION */         
                   .visualSix:first-child {
                     animation: visualSixRotate 3s ease-in-out infinite;
                   }              
@@ -569,13 +617,14 @@
                   }              
                   @keyframes visualSixRotate {
                     80% {
+                      /* AMOUNT EACH DOT ROTATES DURING ANIMATION */
                       transform: rotate(360deg);
                     }
                     100% {
+                      /* WHERE DOT ENDS BEFORE ANIMATION RESETS */
                       transform: rotate(360deg);
                     }
-                  }
-                    
+                  }                    
                 </pre>
               </code>
           </div>
@@ -619,11 +668,17 @@
                   CSS{}
       
                   #iconOne {
+                    /* COLOR OF TEXT/DOTS*/
                     color: rgb(73, 73, 73);
+                    /* WEIGHT OF THE TEXT/DOTS */
                     font-weight: bold; 
-                  }              
+                  }    
+                  /* '2s' AFTER iconOneLoading IS LENGTH 
+                  OF THE ENTIRE ANIMATION */
+                  /* TIME AFTER ease-in-out IS THE DELAY 
+                  FOR EACH BLOCK'S ANIMATION */          
                   #iconOne .loading {
-                    animation: iconOneLoading 2.5s ease-in-out infinite;
+                    animation: iconOneLoading 2s ease-in-out infinite;
                   }              
                   #iconOne .loadingDotOne {
                     animation: iconOneDots 2s ease-in 0.2s infinite;
@@ -650,11 +705,10 @@
                       color: rgb(136, 136, 136);
                     }
                     60% {
-                      /* YOUR FONT COLOR */
+                      /* YOUR ORIGINAL FONT COLOR */
                       color: rgb(73, 73, 73);
                     }
-                  }
-                    
+                  }                    
                 </pre>
               </code>
           </div>
@@ -684,6 +738,8 @@
     
                   CSS{}
       
+                  /* '2s' AFTER iconTwoLoading IS LENGTH 
+                  OF THE ENTIRE ANIMATION */
                   #iconTwo p {
                     animation: iconTwoLoading 2s ease-in-out infinite;
                   }              
@@ -694,12 +750,11 @@
                       font-variant: small-caps;
                     }
                     100% {
-                      /* STARTING FONT STYLE */
+                      /* FONT STYLE YOU WANT TO RETURN TO */
                       font-weight: normal;
                       font-variant: normal;
                     }
                   }
-                    
                 </pre>
               </code>
           </div>
@@ -743,6 +798,10 @@
     
                   CSS{}
       
+                  /* '2s' AFTER iconThreeLoading IS LENGTH 
+                  OF THE ENTIRE ANIMATION */
+                  /* TIME AFTER ease-in-out IS THE DELAY 
+                  FOR EACH BLOCK'S ANIMATION */
                   #iconThree p span:nth-child(1) {
                     animation: iconThreeLoading 2s ease-in infinite;
                   }              
@@ -776,7 +835,6 @@
                       font-variant: normal;
                     }
                   }  
-    
                 </pre>
               </code>
           </div>
@@ -811,7 +869,9 @@
                     display: block;
                     width: 100%;
                     margin: auto;
+                    /* SIZE, STYLE, AND COLOR OF THE TOP BAR */
                     border-bottom: 1px solid rgb(73, 73, 73);
+                    /* '2s' IS THE LENGTH OF THE ANIMATION */
                     animation: iconFourTop 2s ease-out infinite;
                   }              
                   #iconFour::after {
@@ -819,24 +879,29 @@
                     display: block;
                     width: 0;
                     margin: -12px auto auto auto;
+                    /* SIZE, STYLE, AND COLOR OF THE BOTTOM BAR */
                     border-top: 1px solid rgb(73, 73, 73);
+                    /* '2s' IS THE LENGTH OF THE ANIMATION */
                     animation: iconFourBottom 2s ease-in infinite;
                   }              
                   @keyframes iconFourTop {
                     50% {
+                      /* WIDTH YOU'D LIKE THE TOP TO CHANGE TO */
                       width: 0;
                     } 100% {
+                      /* WIDTH YOU STARTED AT*/
                       width: 100%;
                     }
                   }              
                   @keyframes iconFourBottom {
                     50% {
+                      /* WIDTH YOU'D LIKE THE BOTTOM TO CHANGE TO */
                       width: 100%;
                     } 100% {
+                      /* WIDTH YOU STARTED AT*/
                       width: 0;
                     }
-                  }
-                    
+                  }                    
                 </pre>
               </code>
           </div>
@@ -865,8 +930,12 @@
                   CSS{}
       
                   #iconFive p {
+                    /* STARTING STYLE/COLOR OF THE BORDERS */
                     border: 1px solid rgb(73, 73, 73);
+                    /* '3s' IS THE LENGTH OF THE ANIMATION */
                     animation: iconFive 3s infinite;
+                    /* SPACE BETWEEN THE WORD AND THE BORDER*/
+                    /* TOP -> RIGHT -> BOTTOM -> LEFT */
                     padding: 2px 5px 5px 5px;
                   }              
                   @keyframes iconFive {
@@ -886,8 +955,7 @@
                       /* ORIGINAL BORDER  */
                       border-right: 1px solid rgb(73, 73, 73);
                     }
-                  }
-    
+                  }    
                 </pre>
               </code>
           </div>
