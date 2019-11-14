@@ -702,3 +702,25 @@ footer {
   height: 25px;
   border-top: 1px solid rgb(73, 73, 73);
 }
+
+@media only screen and (min-width: 762px){
+  nav .titleBit {
+    margin-left: 45px;
+  }
+
+  .navList li {
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  #about h1 {
+    margin-right: 40px;
+    margin-left: 90%;
+  }
+
+  #about p {
+    text-align: right;
+    margin-right: 50px;
+    margin-left: 25%;
+  }
+}
